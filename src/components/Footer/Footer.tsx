@@ -11,8 +11,8 @@ export function Footer() {
   return (
     <Container className="footer">
       <a href="https://vinayaksingh.in" className="logo">
-        <span>www.vinayak</span>
-        <span>singh.in</span>
+        <p>www.hamidhussainportfolio.com</p>
+        {/* <span></span> */}
       </a>
       <div>
         <p>
