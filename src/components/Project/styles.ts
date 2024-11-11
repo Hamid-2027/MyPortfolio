@@ -25,7 +25,6 @@ export const Container = styled.section`
       display: flex;
       flex-direction: column;
       height: 100%;
-      // width:85%;
       color: #FFF;
       &:hover{
         transform: translateY(-5px);
