@@ -46,7 +46,9 @@ export const Container = styled.section`
           width: 5.0rem;
         }
       }
-      
+      .productionAppGitMessage{
+       color: var(--green);
+      }
       h3{
         margin-bottom: 2rem;
       }

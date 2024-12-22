@@ -58,7 +58,7 @@ export const Container = styled.section`
     .hero-text{
 
       h1{
-        font-size: 5rem;
+        font-size: 4rem;
       }
     }
     
@@ -66,7 +66,20 @@ export const Container = styled.section`
       display: none;
     }
   }
+  @media(max-width: 312px){
+    display: block;
+    margin-top: 15%;
+    .hero-text{
 
+      h1{
+        font-size: 3rem;
+      }
+    }
+    
+    .hero-image{
+      display: none;
+    }
+  }
   @media(max-width: 600px){
     margin-top: 35%;
   }

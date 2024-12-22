@@ -36,7 +36,10 @@ export const Container = styled.section`
     margin-top: 2rem;
     color: var(--green);
   }
-
+  .greenText{
+    // margin-top: 2rem;
+    color: var(--green);
+  }
   p{
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
@@ -47,9 +50,12 @@ export const Container = styled.section`
 
   .about-image{
    img{
-    border:2px solid blue;
+    border:1.6px solid green;
     //  margin-top: 2rem;
      width: 75%;
+      border-radius: 65px;
+      border-top-left-radius: 140px; 
+      border-bottom-right-radius: 140px; 
      filter: grayscale(0);
      transition: filter 0.5s;
      &:hover{

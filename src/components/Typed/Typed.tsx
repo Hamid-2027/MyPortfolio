@@ -7,7 +7,7 @@ const Typed: React.FC = () => {
     <div className="TypeEffect">
       <Typewriter
         options={{
-          strings: ['<strong>HAMID <span style="color: #27ae60;">Hello</span> World!</strong>', 'RN Front-end Developer'],
+          strings: ['<strong><span style="color: #27ae60;">Hamid Hussain</span> </strong>', 'React Native Developer','Mobile App developer'],
           autoStart: true,
           loop: true,
           delay: 70,
