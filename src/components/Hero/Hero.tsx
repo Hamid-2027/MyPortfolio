@@ -17,8 +17,7 @@ export function Hero() {
           <p>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-          <h1>M Jawad Mir</h1>
-          {/* <h1>Talha Jamil</h1> */}
+          <h1>Talha Jamil</h1>
 
         </ScrollAnimation>
         <Typed/> 
@@ -35,8 +34,7 @@ export function Hero() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
       <div className="social-media"><a
-         href="https://www.linkedin.com/in/m-jawad-mir-21178a194/"
-         // href="https://www.linkedin.com/in/talha-jamil-03b176210/"
+         href="https://www.linkedin.com/in/talha-jamil-03b176210/"
          
         target="_blank"
         rel="noreferrer"
@@ -51,8 +49,7 @@ export function Hero() {
           <img src={githubIcon} alt="GitHub" />
         </a>
         <a
-          href="https://api.whatsapp.com/send/?phone=%2B923441080119&text=Hello+Jawad"
-          // href="https://api.whatsapp.com/send/?phone=%2B923346751811&text=Hello+Talha"
+          href="https://api.whatsapp.com/send/?phone=%2B923346751811&text=Hello+Talha"
           target="_blank"
           rel="noreferrer"
         >

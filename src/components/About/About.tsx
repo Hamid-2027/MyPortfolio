@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import JawadMir from "../../assets/JawadMir.png";
+import TalhaJamil from "../../assets/Talha.png";
 import wordpress from "../../assets/wordpress.svg";
 import shopify from "../../assets/shopify.svg";
 import htmlIcon from "../../assets/html-icon.svg";
@@ -21,7 +21,7 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-          Hi, I'm Javad Mir, a React Native developer passionate about crafting custom mobile experiences. I have the skills to bring your app ideas to life.
+          Hi, I'm Talha Jamil, a React Native developer passionate about crafting custom mobile experiences. I have the skills to bring your app ideas to life.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
@@ -70,7 +70,7 @@ export function About() {
       </div>
       <div>
         <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000} className="about-image">
-          <img src={JawadMir} alt="JawadMir" />
+          <img src={TalhaJamil} alt="TalhaJamil" />
         </ScrollAnimation>
       </div>
     </Container>
