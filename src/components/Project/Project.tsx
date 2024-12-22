@@ -1,11 +1,26 @@
+
 import { Container } from "./styles";
 import githubIcon from "../../assets/github.svg"
 // import DownloadApp from '../../assets/download.png'
 import externalLink from "../../assets/external-link.svg"
 import ScrollAnimation from "react-animate-on-scroll";
+import { useState } from "react";
 
 
 export function Project() {
+  const [message, setMessage] = useState('');
+  const [selectedProject, setSelectedProject]=useState(0);
+  const handleMouseEnter = () => {
+    setMessage('This is a client production app, and there is no GitHub link available.');
+  };
+
+  const handleMouseLeave = () => {
+    setMessage('');
+  };
+
+  const handleClick = () => {
+    setMessage('This is a client production app, and there is no GitHub link available.');
+  };
   return (
     <Container id="project">
       <h2>My Projects</h2>
@@ -16,17 +31,36 @@ export function Project() {
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
               <div className="project-links">
-                <a href="https://github.com/CodeVinayak/Serverless-Voting-Application" target="_blank" rel="noreferrer">
-                  <img src={githubIcon} alt="Visit site" /></a>
-                <a href="https://vote.vinayaksingh.com" target="_blank" rel="noreferrer">
+              <a href="" target="\_blank" rel="noreferrer"
+                onClick={()=>{
+                  setSelectedProject(1)
+                  handleClick()
+                }}
+                onMouseEnter={()=>{
+                  setSelectedProject(1)
+                  handleMouseEnter()
+                }} 
+
+                onMouseLeave={()=>{
+                  setSelectedProject(1)
+                  handleMouseLeave()
+                }}>
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.sweatpals.sweatpals_app&pcampaignid=web_share" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a> </div>
+                
             </header>
+            {selectedProject===1 && <div className="productionAppGitMessage">{message}</div>}
+
             <div className="body">
-              <h3>Serverless Voting Application for Programming Languages</h3>
-              <p className="cardText"> Developed a serverless voting app using React, AWS Lambda, API Gateway, and DynamoDB, enabling users to view programming languages, cast votes, and access details through an interactive UI, leveraging serverless architecture for scalability and cost-efficiency. </p>
+              <h3>SweatPals | Fitness App</h3>
+              <p className="cardText"> Downloads: 5K+ (Playstore) </p>
+
+              <p className="cardText"> Contributed app features: event creation, community creation and deeplinking. </p>
             </div>
-            <footer> <ul className="tech-list"> <li>AWS Lambda</li> <li>API Gateway</li> <li>DynamoDB</li> </ul> </footer>
+            <footer> <ul className="tech-list"> <li>ReactNative</li> <li>API-Gateway</li> </ul> </footer>
           </div>
         </ScrollAnimation>
 
@@ -35,23 +69,39 @@ export function Project() {
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
               <div className="project-links">
-                <a href="https://github.com/CodeVinayak/AI-Chatbot-Assistant" target="_blank" rel="noreferrer">
-                  <img src={githubIcon} alt="Visit site" /> </a>
-                <a href="https://ai-chatbot-t8fn.onrender.com" target="_blank" rel="noreferrer">
+              <a href="" target="\_blank" rel="noreferrer"
+               onClick={()=>{
+                setSelectedProject(2)
+                handleClick()
+              }}
+              onMouseEnter={()=>{
+                setSelectedProject(2)
+                handleMouseEnter()
+              }} 
+
+              onMouseLeave={()=>{
+                setSelectedProject(2)
+                handleMouseLeave()
+              }}>
+               <img src={githubIcon} alt="Visit site" />
+
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.rectxt.android" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" /></a>
               </div>
             </header>
+            {selectedProject===2 && <div className="productionAppGitMessage">{message}</div>}
             <div className="body">
-              <h3>GeniusBot: AI-Powered Assistance with PDF Insight</h3>
+              <h3>Funky Food</h3>
               <p className="cardText">
-                Developed an interactive chatbot application using Streamlit, OpenAI's GPT-3.5-turbo language model, and PyPDF2 for PDF text extraction, enabling users to ask context-based questions on uploaded PDFs and general queries.
+              Funky Food is an innovative React Native mobile application designed to revolutionize the food ordering experience.
               </p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>Streamlit</li>
-                <li>PyPDF2</li>
-                <li>LangChain</li>
+                <li> React Native</li>
+                <li>Expo</li>
+                <li>Firebase</li>
               </ul>
             </footer>
           </div>
@@ -65,31 +115,45 @@ export function Project() {
                 <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
               </svg>
               <div className="project-links">
-                <a href="https://github.com/CodeVinayak/Jupyter-Notebook/tree/main/Credit%20Risk%20Analysis" target="\_blank" rel="noreferrer">
+                <a href="" target="\_blank" rel="noreferrer"
+                 onClick={()=>{
+                  setSelectedProject(3)
+                  handleClick()
+                }}
+                onMouseEnter={()=>{
+                  setSelectedProject(3)
+                  handleMouseEnter()
+                }} 
+  
+                onMouseLeave={()=>{
+                  setSelectedProject(3)
+                  handleMouseLeave()
+                }}>
                   <img src={githubIcon} alt="Visit site" />
                 </a>
-                <a href="https://github.com/CodeVinayak/Jupyter-Notebook/blob/main/Credit%20Risk%20Analysis/Credit_Risk_Analysis.ipynb" target="\_blank" rel="noreferrer">
+                <a href="https://play.google.com/store/apps/details?id=com.rectxt.android" target="\_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
               </div>
             </header>
+              {selectedProject===3 && <div className="productionAppGitMessage">{message}</div>}
             <div className="body">
-              <h3>Credit Risk Analysis Project</h3>
+              <h3>Keeyora Mobile App</h3>
               <p className="cardText">
-                Developed a highly accurate credit risk classification model using XGBoost, achieving 100% precision, recall, and F1-scores for predicting loan defaults.Implemented rigorous data preprocessing, feature engineering, and hyperparameter tuning on imbalanced credit risk data, employing ensemble methods, cross-validation, and model interpretation techniques.
+              The Keeyora mobile app allows you to send and receive text messages from your Keeyora account on your mobile phone. Texts are sent from your Keeyora number and all conversations are automatically synced with your Keeyora Chrome extension and connected ATS.
               </p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>XGBoost</li>
-                <li>Pandas</li>
-                <li>Matplotlib</li>
+                <li>ReactNative</li>
+                <li>Swift</li>
+                {/* <li></li> */}
               </ul>
             </footer>
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="flipInX">
+        {/* <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
@@ -172,7 +236,7 @@ export function Project() {
               </ul>
             </footer>
           </div>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
 
         {/* <ScrollAnimation animateIn="flipInX">
           <div className="project">

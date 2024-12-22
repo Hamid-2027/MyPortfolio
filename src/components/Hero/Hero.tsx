@@ -24,7 +24,7 @@ export function Hero() {
           <h3>React Native Developer</h3>
         </ScrollAnimation> */}
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">1 Years of Experience</p>
+          <p className="small-resume">1.6 Years of Experience</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
           <BrowserRouter>
@@ -33,33 +33,35 @@ export function Hero() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
       <div className="social-media"><a
-        href="https://www.linkedin.com/in/codevinayak"
+        href="https://linkedin.com/in/hamid-hussain-b05104298"
         target="_blank"
         rel="noreferrer"
       >
         <img src={linkedin} alt="Linkedin" />
       </a>
         <a
-          href="https://github.com/CodeVinayak/"
+          href="https://github.com/Hamid-2027/"
           target="_blank"
           rel="noreferrer"
         >
           <img src={githubIcon} alt="GitHub" />
         </a>
         <a
-          href="https://api.whatsapp.com/send/?phone=%2B919630576848&text=Hello+Vinayak"
+          href="https://api.whatsapp.com/send/?phone=%2B923485959152&text=Hello+Hamid"
           target="_blank"
           rel="noreferrer"
         >
           <img src={whatsapp} alt="Whatsapp" />
         </a>
-        <a
-          href="https://t.me/CodeVinayak"
+        {/* <a
+          href="https://t.me/CodeVivak"
           target="_blank"
           rel="noreferrer"
         >
           <img src={telegram} alt="telegram" />
-        </a></div>
+        </a> */}
+        
+        </div>
         </ScrollAnimation>
       </div>
       <div className="hero-image">
