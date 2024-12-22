@@ -19,35 +19,36 @@ export function Footer() {
       </div>
       <div className="social-media">
         <a
-          href="https://linkedin.com/in/hamid-hussain-b05104298"
+        href="https://www.linkedin.com/in/m-jawad-mir-21178a194/"
+        // href="https://www.linkedin.com/in/talha-jamil-03b176210/"
           target="_blank"
           rel="noreferrer"
         >
           <img src={linkedin} alt="Linkedin" />
         </a>
         <a
-          href="https://github.com/Hamid-2027"
+          href=""
           target="_blank"
           rel="noreferrer"
         >
           <img src={githubIcon} alt="GitHub" />
         </a>
         <a
-          href="https://api.whatsapp.com/send/?phone=%2B923485959152&text=Hello+Hamid"
+          href="https://api.whatsapp.com/send/?phone=%2B923441080119&text=Hello+Jawad"
           target="_blank"
           rel="noreferrer"
         >
           <img src={whatsapp} alt="Whatsapp" />
         </a>
         {/* <a
-          href="https://t.me/CodeVinayak"
+          href=""
           target="_blank"
           rel="noreferrer"
         >
           <img src={telegram} alt="telegram" />
         </a> */}
         {/* <a
-          href="https://www.instagram.com/vinayaksingh.in"
+          href=""
           target="_blank"
           rel="noreferrer"
         >

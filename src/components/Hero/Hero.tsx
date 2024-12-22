@@ -17,14 +17,16 @@ export function Hero() {
           <p>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-          <h1>Hamid_Hussain</h1>
+          <h1>M Jawad Mir</h1>
+          {/* <h1>Talha Jamil</h1> */}
+
         </ScrollAnimation>
         <Typed/> 
         {/* <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
           <h3>React Native Developer</h3>
         </ScrollAnimation> */}
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">1.6 Years of Experience</p>
+          <p className="small-resume">2 Years of Experience</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
           <BrowserRouter>
@@ -33,28 +35,31 @@ export function Hero() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
       <div className="social-media"><a
-        href="https://linkedin.com/in/hamid-hussain-b05104298"
+         href="https://www.linkedin.com/in/m-jawad-mir-21178a194/"
+         // href="https://www.linkedin.com/in/talha-jamil-03b176210/"
+         
         target="_blank"
         rel="noreferrer"
       >
         <img src={linkedin} alt="Linkedin" />
       </a>
         <a
-          href="https://github.com/Hamid-2027/"
+          href=""
           target="_blank"
           rel="noreferrer"
         >
           <img src={githubIcon} alt="GitHub" />
         </a>
         <a
-          href="https://api.whatsapp.com/send/?phone=%2B923485959152&text=Hello+Hamid"
+          href="https://api.whatsapp.com/send/?phone=%2B923441080119&text=Hello+Jawad"
+          // href="https://api.whatsapp.com/send/?phone=%2B923346751811&text=Hello+Talha"
           target="_blank"
           rel="noreferrer"
         >
           <img src={whatsapp} alt="Whatsapp" />
         </a>
         {/* <a
-          href="https://t.me/CodeVivak"
+          href=""
           target="_blank"
           rel="noreferrer"
         >
