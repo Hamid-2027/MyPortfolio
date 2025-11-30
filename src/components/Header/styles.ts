@@ -7,10 +7,8 @@ export const Container = styled.header`
   align-items: center;
   padding: 1.8rem 10rem;
   
-  background-color: #21212150;
-  
-  backdrop-filter: blur(6px);
-
+  background-color: var(--navy-transparent);
+  backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   left: 0;
@@ -22,19 +20,19 @@ export const Container = styled.header`
     align-items: center;
     gap: 1.8rem;
     a{
-      color: #FFFF;
+      color: var(--slate);
       padding: 0.6rem;
       font-family: 'Red Hat Display', sans-serif;
       font-weight: 500;
       text-transform: uppercase;
-      transition: filter 0.25s;
+      transition: color 0.25s;
 
       &.button{
         padding: 0.6rem 2rem;
       }
 
       &:hover{
-        filter: brightness(0.6);
+        color: var(--green);
       }
     }
 
@@ -48,7 +46,7 @@ export const Container = styled.header`
   .menu{
     width: 2rem;
     height: 0.2rem;
-    background: #FFFF;
+    background: var(--slate);
     position: relative;
     cursor: pointer;
     display: none;
@@ -83,7 +81,7 @@ export const Container = styled.header`
     position: absolute;
     width: 100%;
     height: 0.2rem;
-    background: #FFFF;
+    background: var(--slate);
     cursor: pointer;
     transition: .6s;
   }

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
   margin-top: 3rem;
   display: grid;
@@ -60,12 +59,16 @@ export const ContainerSucces = styled.div`
   margin-top: 10rem;
   text-align: center;
 
+  h3{
+    color: var(--lightest-slate);
+    margin-bottom: 1rem;
+  }
+
   button{
-    border-radius: 0.6rem;
+    border-radius: 0.5rem;
     padding: 1rem;
     margin-top: 0.8rem;
     text-transform: uppercase;
     text-align: center;
-    color: #fbfbfb;
   }
 `

@@ -11,7 +11,7 @@ import telegram from '../../assets/telegram.svg'
 import Typed from "../Typed/Typed"
 export function Hero() {
   return (
-    <Container id="home">
+    <Container id="home" className="full-screen-centered-layout">
       <div className="hero-text">
         <ScrollAnimation animateIn="fadeInUp">
           <p>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</p>
@@ -20,9 +20,6 @@ export function Hero() {
           <h1>Hamid_Hussain</h1>
         </ScrollAnimation>
         <Typed/> 
-        {/* <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>React Native Developer</h3>
-        </ScrollAnimation> */}
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
           <p className="small-resume">1.6 Years of Experience</p>
         </ScrollAnimation>
@@ -31,42 +28,32 @@ export function Hero() {
             <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
           </BrowserRouter>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
-      <div className="social-media"><a
-        href="https://linkedin.com/in/hamid-hussain-b05104298"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img src={linkedin} alt="Linkedin" />
-      </a>
-        <a
-          href="https://github.com/Hamid-2027/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={githubIcon} alt="GitHub" />
-        </a>
-        <a
-          href="https://api.whatsapp.com/send/?phone=%2B923485959152&text=Hello+Hamid"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={whatsapp} alt="Whatsapp" />
-        </a>
-        {/* <a
-          href="https://t.me/CodeVivak"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={telegram} alt="telegram" />
-        </a> */}
-        
-        </div>
-        </ScrollAnimation>
       </div>
-      <div className="hero-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img src={Illustration} alt="Ilustração" />
+      <div className="social-media-container">
+        <ScrollAnimation animateIn="fadeInLeft" delay={1 * 1000}>
+          <div className="social-media">
+            <a
+              href="https://linkedin.com/in/hamid-hussain-b05104298"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={linkedin} alt="Linkedin" />
+            </a>
+            <a
+              href="https://github.com/Hamid-2027/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={githubIcon} alt="GitHub" />
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B923485959152&text=Hello+Hamid"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={whatsapp} alt="Whatsapp" />
+            </a>
+          </div>
         </ScrollAnimation>
       </div>
     </Container>
