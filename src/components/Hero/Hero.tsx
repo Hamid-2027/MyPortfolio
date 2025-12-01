@@ -9,27 +9,12 @@ import whatsapp from '../../assets/whatsapp.svg'
 import Hello from '../../assets/Hello.gif'
 import telegram from '../../assets/telegram.svg'
 import Typed from "../Typed/Typed"
+
 export function Hero() {
   return (
-    <Container id="home" className="full-screen-centered-layout">
-      <div className="hero-text">
-        <ScrollAnimation animateIn="fadeInUp">
-          <p>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-          <h1>Hamid_Hussain</h1>
-        </ScrollAnimation>
-        <Typed/> 
-        <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">1.6 Years of Experience</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
-          <BrowserRouter>
-            <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
-          </BrowserRouter>
-        </ScrollAnimation>
-      </div>
+    <Container id="home">
       <div className="social-media-container">
+        <div className="shining-shadow"></div>
         <ScrollAnimation animateIn="fadeInLeft" delay={1 * 1000}>
           <div className="social-media">
             <a
@@ -54,6 +39,28 @@ export function Hero() {
               <img src={whatsapp} alt="Whatsapp" />
             </a>
           </div>
+        </ScrollAnimation>
+      </div>
+      <div className="hero-image">
+        <ScrollAnimation animateIn="fadeInUp">
+          <img src="/images/bw_photo.png" alt="Hamid Hussain" />
+        </ScrollAnimation>
+      </div>
+      <div className="hero-text">
+        <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
+          <p>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</p>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
+          <h1>Hamid_Hussain</h1>
+        </ScrollAnimation>
+        <Typed/> 
+        <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
+          <p className="small-resume">1.6 Years of Experience</p>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
+          <BrowserRouter>
+            <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
+          </BrowserRouter>
         </ScrollAnimation>
       </div>
     </Container>

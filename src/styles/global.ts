@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
+const fontImport = "@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');";
+
 export const GlobalStyle = createGlobalStyle`
+  ${fontImport}
+
   :root{
     --pink: #2D7F5E  ;
     --black: #212121;
@@ -81,7 +85,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, textarea, button{
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
     font-weight: 400;
   }
 
