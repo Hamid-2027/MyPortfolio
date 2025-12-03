@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
   align-items: center;
   justify-items: center;
   height: 100vh;
@@ -16,9 +16,9 @@ export const Container = styled.section`
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+      width: 300%;
+      height: 300%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 60%);
       z-index: -1;
       pointer-events: none;
     }
@@ -28,9 +28,10 @@ export const Container = styled.section`
       gap: 1.5rem;
       img {
         width: 3rem;
-        transition: filter 0.25s;
+        transition: all 0.25s;
         &:hover {
           filter: brightness(0.8);
+          transform: scale(1.2);
         }
       }
     }
@@ -39,8 +40,6 @@ export const Container = styled.section`
   .hero-image {
     img {
       max-width: 100%;
-      border-radius: 0;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease;
       &:hover {
         transform: scale(1.05);
@@ -49,8 +48,8 @@ export const Container = styled.section`
   }
 
   .hero-text {
-    justify-self: end;
-    text-align: right;
+    justify-self: start;
+    text-align: left;
     & > p {
       font-size: 2rem;
     }
@@ -61,6 +60,7 @@ export const Container = styled.section`
     p.small-resume {
       font-size: 1.6rem;
       margin-bottom: 3rem;
+      color: var(--green);
     }
     .button {
       margin-top: 3rem;

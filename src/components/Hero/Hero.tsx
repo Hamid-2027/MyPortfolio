@@ -41,21 +41,23 @@ export function Hero() {
           </div>
         </ScrollAnimation>
       </div>
+
       <div className="hero-image">
         <ScrollAnimation animateIn="fadeInUp">
           <img src="/images/bw_photo.png" alt="Hamid Hussain" />
         </ScrollAnimation>
       </div>
+
       <div className="hero-text">
         <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
           <p>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-          <h1>Hamid_Hussain</h1>
+          <h1>Hamid Hussain</h1>
         </ScrollAnimation>
         <Typed/> 
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">1.6 Years of Experience</p>
+          <p className="small-resume">Hamid Hussain | 2 Years of Experience</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
           <BrowserRouter>
