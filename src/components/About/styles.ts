@@ -1,7 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 12rem;
+  padding: 0 10rem;
+
+  @media (max-width: 740px){
+    padding: 0 4rem;
+  }
+
+  @media(max-width: 360px){
+    padding: 0 2rem;
+  }
+  background-color: #2b2b2b;
+  padding-top: 12rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -44,6 +54,7 @@ export const Container = styled.section`
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
     font-weight: 500;
+    word-break: break-word;
   }
   
   
@@ -80,26 +91,16 @@ export const Container = styled.section`
   }
 
   @media (max-width: 960px){
-    display: block;
+    grid-template-columns: 1fr;
     text-align: center;
+
+    .about-image {
+      justify-self: center;
+    }
     
     .hard-skills{
       justify-content: center;
     }
-    .about-image{
-      display: flex;
-      max-width: 100%;
-      img{
-        margin-top: 2rem;
-        width: 100%;
-        filter: grayscale(0);
-        transition: filter 0.5s;
-        &:hover{
-          filter: grayscale(0);
-        }
-    }
-    
-    
   }
 
 `

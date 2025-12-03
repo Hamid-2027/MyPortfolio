@@ -1,11 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+  padding: 0 10rem;
+
+  @media (max-width: 740px){
+    padding: 0 4rem;
+  }
+
+  @media(max-width: 360px){
+    padding: 0 2rem;
+  }
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   align-items: center;
   justify-items: center;
-  height: 100vh;
+  min-height: 100vh;
   gap: 2rem;
 
   .social-media-container {

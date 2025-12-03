@@ -1,6 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+  padding: 0 10rem;
+
+  @media (max-width: 740px){
+    padding: 0 4rem;
+  }
+
+  @media(max-width: 360px){
+    padding: 0 2rem;
+  }
   margin-top: 15rem;
   
   h2{
